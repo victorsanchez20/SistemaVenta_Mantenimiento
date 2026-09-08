@@ -72,7 +72,12 @@ public class VentaService {
         return ventaActual;
     }
 
-    public boolean validarVentaActiva() {
+
+    private String imprimirError(String msg) {
+        return msg;
+    }
+
+        public boolean validarVentaActiva() {
         if (ventaActual == null) {
             imprimirError("No hay venta activa");
             return false;
@@ -80,8 +85,5 @@ public class VentaService {
         return true;
     }
 
-    private String imprimirError(String msg) {
-        return msg;
-    }
     
 }
