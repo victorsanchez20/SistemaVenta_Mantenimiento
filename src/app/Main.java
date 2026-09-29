@@ -1,6 +1,7 @@
 package app;
 
 import repository.ClienteRepository;
+import repository.IClienteRepository;
 import repository.ProductoRepository;
 import repository.VentaRepository;
 import service.ClienteService;
