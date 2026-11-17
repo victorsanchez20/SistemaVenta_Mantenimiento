@@ -17,7 +17,7 @@ public class ClienteService {
     public void registrarCliente(String dni, String nombre, String tipo) {
 
         if (!Validaciones.validarDni(dni)) {
-            Console.error("DNI inválido");
+            Console.error("ERROR: Cliente inválido");
             return;
         }
 
@@ -27,6 +27,9 @@ public class ClienteService {
     }
 
     public Cliente buscarCliente(String dni) {
+        
         return clienteRepo.buscarPorDni(dni);
     }
+
+
 }
